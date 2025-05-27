@@ -138,7 +138,7 @@ print(f"Parquet Read All Columns Time: {end_time - start_time:.4f} seconds")
 
 # Reading from ORC file
 start_time = time.time()
-df_orc = pd.read_orc(orc_file)  # بدون تحديد محرك "engine"
+df_orc = pd.read_orc(orc_file) 
 end_time = time.time()
 print(f"ORC Read Time: {end_time - start_time:.4f} seconds")
 
