@@ -1,6 +1,3 @@
-Here's your updated README with results and an explanation of why Parquet is fast:
-
----
 
 # File Types, Reading Speed, and Size
 
@@ -30,26 +27,27 @@ Below are the measured write speeds and file sizes:
 
 | Format  | Write Time (s) | File Size (MB) |
 |---------|--------------|----------------|
-| **CSV** | 5.2         | 102.5          |
-| **JSON** | 4.8         | 110.2          |
-| **Parquet** | 1.2      | 25.4           |
-| **ORC** | 1.6         | 26.1           |
-| **Feather** | 1.1     | 25.5           |
-| **Pickle** | 2.3      | 80.7           |
-| **Avro** | 3.4       | 95.6           |
+| **CSV** | 5.4         | 78.13          |
+| **JSON** | 2.8        | 130.58         |
+| **Parquet** | 0.75    | 18.24          |
+| **ORC** | 0.96         | 67.56         |
+| **Feather** | 0.43     | 28.41         |
+| **Pickle** | 1.73      | 83.73         |
+| **Avro** | 9.31       | 68.82          |
 
 ## Read Speed
 Below are the measured read speeds:
 
 | Format  | Read Time (s) |
 |---------|--------------|
-| **CSV** | 3.8         |
-| **JSON** | 4.1         |
-| **Parquet** | 0.3      |
-| **ORC** | 0.5         |
-| **Feather** | 0.2     |
-| **Pickle** | 1.6      |
-| **Avro** | 2.8       |
+| **CSV** | 2.8         |
+| **JSON** | 9.3         |
+| **Parquet** | 1.1      |
+| **ORC** | 0.9         |
+| **Feather** | 0.8     |
+| **Pickle** | 1.4      |
+| **Avro** | 4.7       |
+
 
 ## Why is Parquet Faster?
 Parquet is optimized for analytical workloads due to its **columnar storage format**:
